@@ -70,7 +70,7 @@ def procesar_archivo(filepath):
         array_2d[int(x_rect), int(y_rect)] = value_rect
 
     data = np.sum(array_2d, axis=1)
-    plot_x = np.linspace(0, 200, len(data))
+    plot_x = np.linspace(0, len(data), len(data))
 
     # Identificar inicio y final de la señal
     for i in range(len(data)):
